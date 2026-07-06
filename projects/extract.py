@@ -2,16 +2,29 @@
 def extract_data(endpoint , params):
   base_url = "https://api.themoviedb.org/3"
   url = base_url + endpoint
+  NON_RETRYABLE_STATUS_CODES = [400,401,403,404]
+  MAX_ATTEMPTS = 3
+
   # If any issue retry logic
   for attempts in range(1,MAX_ATTEMPTS + 1):
 
     response = requests.get(url,params=params,headers=headers)
+    
     # Checking the status if 200 move forward
     if response.status_code == 200:
       data = response.json()
       print(f"Attempt : {attempts} succeeded")
       return data
+
+    # if too many requests then we are going to wait
+    if response.status_code == 429:
+      time.sleep(5)
+
+    # stoping the retry if status code are unimprovable
+    if response.status_code in NON_RETRYABLE_STATUS_CODES:
+      break
     
+
     # keeping notes where we needed retries
     print(
     f"Attempt {attempts}/{MAX_ATTEMPTS} failed "
