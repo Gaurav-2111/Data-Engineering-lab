@@ -1,10 +1,7 @@
 #extract file
 def extract_data(endpoint , params):
-  base_url = "https://api.themoviedb.org/3"
-  url = base_url + endpoint
-  NON_RETRYABLE_STATUS_CODES = [400,401,403,404]
-  MAX_ATTEMPTS = 3
 
+  url = base_url + endpoint
   # If any issue retry logic
   for attempts in range(1,MAX_ATTEMPTS + 1):
 
