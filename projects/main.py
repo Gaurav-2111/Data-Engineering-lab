@@ -1,11 +1,12 @@
 #main.py to run the pipeline
 import time
+from config import *
 from datetime import date
 from extract import extract_data
 from transform import transform_data
 from load import load_data
 from storage import save_data
-from config import *
+
 
 all_data = []
 # Starting time of pipeline
@@ -22,6 +23,7 @@ for i in range(1,4):
   print(f"Extracted {len(movies['results'])} movies from page {i}")
   all_data.extend(movies['results'])
 print(f"Extracted {len(all_data)} movies in total")
+
 # calling save data with the file_name
 today = date.today()
 file_name = today.strftime("%Y-%m-%d")
