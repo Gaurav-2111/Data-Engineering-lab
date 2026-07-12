@@ -1,11 +1,11 @@
 #load data
-import mysql.connector
+from config import *
 from database import get_connection
 
 def load_data(clean_data):
 
   connection = get_connection()
-  
+
   # cursor is going to connect our python with mysql
   cursor = connection.cursor()
 
