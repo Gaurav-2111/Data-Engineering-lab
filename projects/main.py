@@ -1,5 +1,15 @@
 #main.py to run the pipeline
+import time
+from datetime import date
+from extract import extract_data
+from transform import transform_data
+from load import load_data
+from storage import save_data
+from config import *
+
 all_data = []
+# Starting time of pipeline
+start_time = time.perf_counter()
 for i in range(1,4):
   params = {
     "language": "en-US",
@@ -9,13 +19,23 @@ for i in range(1,4):
   if movies is None:
     raise RuntimeError("pipeline stopped because data extraction failed")
 
+  print(f"Extracted {len(movies['results'])} movies from page {i}")
   all_data.extend(movies['results'])
-
+print(f"Extracted {len(all_data)} movies in total")
 # calling save data with the file_name
 today = date.today()
 file_name = today.strftime("%Y-%m-%d")
 save_data(all_data,file_name)
 
 #calling the transform function
-transform_data(all_data)
+clean_data = transform_data(all_data)
 
+# calling the load function to load the clean data in the database
+load_data(clean_data)
+
+# ending time of pipeline
+end_time = time.perf_counter()
+execution_time = end_time - start_time
+print("---------pipeline succesfull-------------")
+print(f"seconds         : {execution_time}")
+print(f"extracted Total : {len(all_data)} ")

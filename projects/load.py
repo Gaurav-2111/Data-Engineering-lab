@@ -1,12 +1,11 @@
 #load data
+import mysql.connector
+from database import get_connection
+
 def load_data(clean_data):
 
-  connection = mysql.connector.connect(
-      host=DB_HOST,
-      user=DB_USER,
-      password=DB_PASSWORD,
-      database=DB_NAME
-    )
+  connection = get_connection()
+  
   # cursor is going to connect our python with mysql
   cursor = connection.cursor()
 
@@ -30,12 +29,12 @@ def load_data(clean_data):
 
     insert_query = """insert ignore into movies (id,title,release_date,popularity,vote_average,vote_count,original_language,adult,overview)
       values (%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-    
+
     # creating a list because executemany() uses combined data as it process data in a batch
     batch_data = []
 
     for movie in clean_data:
-      
+
 
         values = (
               movie["id"],
@@ -48,11 +47,11 @@ def load_data(clean_data):
               movie["adult"],
               movie["overview"]
           )
-        # appending data of each row as a tuple inside a list 
+        # appending data of each row as a tuple inside a list
         # [(row 1),(row 2),(row 3)] every tuple is going to fill the place of those place holders we created in insert_query
         batch_data.append(values)
 
-    # executemany to send all data at once 
+    # executemany to send all data at once
     cursor.executemany(insert_query,batch_data)
     connection.commit()
 

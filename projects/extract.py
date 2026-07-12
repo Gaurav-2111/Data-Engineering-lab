@@ -1,7 +1,12 @@
 #extract file
+import requests
+import time
+from config import *
+
 def extract_data(endpoint , params):
   url = base_url + endpoint
-
+  RETRY_DELAY = 3
+  MAX_ATTEMPTS = 3
   # If any issue retry logic
   for attempts in range(1,MAX_ATTEMPTS + 1):
     try:
@@ -15,7 +20,8 @@ def extract_data(endpoint , params):
 
       # if too many requests then we are going to wait
       if response.status_code == 429:
-        time.sleep(RETRY_DELAYS)
+        print(f"attempt: {attempts}/{MAX_ATTEMPTS} , retrying after {RETRY_DELAY} seconds")
+        time.sleep(RETRY_DELAY)
 
       # stoping the retry if status code are unimprovable
       if response.status_code in NON_RETRYABLE_STATUS_CODES:
@@ -28,10 +34,12 @@ def extract_data(endpoint , params):
       f"(Status: {response.status_code})."
       )
 
+    #handling connection errors
     except requests.exceptions.ConnectionError:
       print(f"attempt: {attempts}/{MAX_ATTEMPTS} , failed due to connection error")
-    
-    except requests.exceptions.ConnectTimeout:
+
+    #handling timeouts
+    except requests.exceptions.Timeout:
       print(f"attempt: {attempts}/{MAX_ATTEMPTS} , failed due to connection timeouts")
 
     # return none if response code is not 200
