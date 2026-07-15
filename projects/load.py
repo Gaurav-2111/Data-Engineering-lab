@@ -1,4 +1,5 @@
 #load data
+from main import logging
 from config import *
 from database import get_connection
 
@@ -57,7 +58,7 @@ def load_data(clean_data):
 
   # if there was a error in storing data in database
   except Exception as e:
-    print(f"database transaction failed so rolling back changes , error : {e}")
+    logging.error(f"database transaction failed so rolling back changes , error : {e}")
     connection.rollback()
 
   # it does not matter what happened we always close are connectoin
