@@ -1,5 +1,9 @@
 #transform data
+import logging
+
+
 def transform_data(all_data):
+  logging.info("Starting data transformation process")
   clean_data = []
   for movie in all_data:
       clean_data.append({
@@ -13,3 +17,5 @@ def transform_data(all_data):
         "adult":movie['adult'],
         "overview":movie['overview']
         })
+  logging.info(f"transformed {len(clean_data)} rows of data")
+  return clean_data

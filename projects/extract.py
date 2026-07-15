@@ -4,6 +4,8 @@ import time
 import logging 
 from config import *
 
+
+logging.info("Starting data extraction process")
 def extract_data(endpoint , params):
   url = base_url + endpoint
   RETRY_DELAY = 3
@@ -16,7 +18,7 @@ def extract_data(endpoint , params):
       # Checking the status if 200 move forward
       if response.status_code == 200:
         data = response.json()
-        logging.info(f"Attempt : {attempts} succeeded")
+        logging.info("Attempt : succeeded")
         return data
 
       # if too many requests then we are going to wait

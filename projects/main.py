@@ -12,13 +12,14 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
     filename="pipeline.log",
-    filemode="a"
+    filemode="a",
+    force = True
 )
 all_data = []
 # Starting time of pipeline
 start_time = time.perf_counter()
 
-logging.info("Pipeline started.")
+logging.info("------------------Pipeline started------------------")
 
 for i in range(1,4):
   params = {

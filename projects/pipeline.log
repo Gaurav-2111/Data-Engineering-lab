@@ -1,0 +1,40 @@
+2026-07-15 22:37:34,887 | INFO | Pipeline started.
+2026-07-15 22:37:35,704 | INFO | Attempt : succeeded
+2026-07-15 22:37:35,705 | INFO | Extracted 20 movies from page 1
+2026-07-15 22:37:36,445 | INFO | Attempt : succeeded
+2026-07-15 22:37:36,446 | INFO | Extracted 20 movies from page 2
+2026-07-15 22:37:37,181 | INFO | Attempt : succeeded
+2026-07-15 22:37:37,181 | INFO | Extracted 20 movies from page 3
+2026-07-15 22:37:37,181 | INFO | Extracted 60 movies in total
+2026-07-15 22:37:37,185 | INFO | starting data loading process
+2026-07-15 22:37:37,289 | ERROR | database transaction failed so rolling back changes , error : 'NoneType' object is not iterable
+2026-07-15 22:37:37,289 | INFO | ---------pipeline succesfull-------------
+2026-07-15 22:37:37,290 | INFO | seconds         : 2.40 seconds
+2026-07-15 22:37:37,290 | INFO | extracted Total : 60 
+2026-07-15 22:50:26,320 | INFO | Pipeline started.
+2026-07-15 22:50:27,528 | INFO | Attempt : succeeded
+2026-07-15 22:50:27,529 | INFO | Extracted 20 movies from page 1
+2026-07-15 22:50:28,352 | INFO | Attempt : succeeded
+2026-07-15 22:50:28,354 | INFO | Extracted 20 movies from page 2
+2026-07-15 22:50:29,079 | INFO | Attempt : succeeded
+2026-07-15 22:50:29,079 | INFO | Extracted 20 movies from page 3
+2026-07-15 22:50:29,080 | INFO | Extracted 60 movies in total
+2026-07-15 22:50:29,083 | INFO | ------------starting data loading process-------------
+2026-07-15 22:50:29,197 | ERROR | database transaction failed so rolling back changes , error : object of type 'NoneType' has no len()
+2026-07-15 22:50:29,198 | INFO | ---------pipeline succesfull-------------
+2026-07-15 22:50:29,198 | INFO | seconds         : 2.88 seconds
+2026-07-15 22:50:29,198 | INFO | extracted Total : 60 
+2026-07-15 22:54:23,626 | INFO | ------------------Pipeline started------------------
+2026-07-15 22:54:24,785 | INFO | Attempt : succeeded
+2026-07-15 22:54:24,786 | INFO | Extracted 20 movies from page 1
+2026-07-15 22:54:25,605 | INFO | Attempt : succeeded
+2026-07-15 22:54:25,605 | INFO | Extracted 20 movies from page 2
+2026-07-15 22:54:26,354 | INFO | Attempt : succeeded
+2026-07-15 22:54:26,355 | INFO | Extracted 20 movies from page 3
+2026-07-15 22:54:26,355 | INFO | Extracted 60 movies in total
+2026-07-15 22:54:26,359 | INFO | transformed 60 rows of data
+2026-07-15 22:54:26,359 | INFO | ------------starting data loading process-------------
+2026-07-15 22:54:26,601 | INFO | loading 60 rows of data into the database
+2026-07-15 22:54:26,620 | INFO | ---------pipeline succesfull-------------
+2026-07-15 22:54:26,620 | INFO | seconds         : 2.99 seconds
+2026-07-15 22:54:26,620 | INFO | extracted Total : 60 

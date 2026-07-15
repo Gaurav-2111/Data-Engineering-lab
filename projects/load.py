@@ -1,10 +1,11 @@
 #load data
-from main import logging
+import logging
 from config import *
 from database import get_connection
 
-def load_data(clean_data):
 
+def load_data(clean_data):
+  logging.info("------------starting data loading process-------------")
   connection = get_connection()
 
   # cursor is going to connect our python with mysql
@@ -33,7 +34,7 @@ def load_data(clean_data):
 
     # creating a list because executemany() uses combined data as it process data in a batch
     batch_data = []
-
+    logging.info(f"loading {len(clean_data)} rows of data into the database")
     for movie in clean_data:
 
 
