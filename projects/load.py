@@ -5,7 +5,7 @@ from database import get_connection
 
 
 def load_data(clean_data):
-  logging.info("------------starting data loading process-------------")
+  logging.info("----starting data loading process----")
   connection = get_connection()
 
   # cursor is going to connect our python with mysql
