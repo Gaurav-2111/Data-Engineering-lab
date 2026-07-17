@@ -38,3 +38,20 @@
 2026-07-15 22:54:26,620 | INFO | ---------pipeline succesfull-------------
 2026-07-15 22:54:26,620 | INFO | seconds         : 2.99 seconds
 2026-07-15 22:54:26,620 | INFO | extracted Total : 60 
+2026-07-17 22:54:37,263 | INFO | ------------------Pipeline started------------------
+2026-07-17 22:54:38,453 | INFO | Attempt : succeeded
+2026-07-17 22:54:38,455 | INFO | Extracted 20 movies from page 1
+2026-07-17 22:54:39,414 | INFO | Attempt : succeeded
+2026-07-17 22:54:39,416 | INFO | Extracted 20 movies from page 2
+2026-07-17 22:54:40,241 | INFO | Attempt : succeeded
+2026-07-17 22:54:40,243 | INFO | Extracted 20 movies from page 3
+2026-07-17 22:54:40,243 | INFO | Extracted 60 movies in total
+2026-07-17 22:54:40,253 | INFO | ------Starting data transformation process------
+2026-07-17 22:54:40,254 | INFO | Total records received : 60
+2026-07-17 22:54:40,254 | INFO | Valid records          : 60
+2026-07-17 22:54:40,254 | INFO | Invalid records        : 0
+2026-07-17 22:54:40,254 | INFO | ----starting data loading process----
+2026-07-17 22:54:40,918 | INFO | loading 60 rows of data into the database
+2026-07-17 22:54:40,962 | INFO | ---------------pipeline succesfull-------------------
+2026-07-17 22:54:40,962 | INFO | seconds         : 3.70 seconds
+2026-07-17 22:54:40,962 | INFO | extracted Total : 60 

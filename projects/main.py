@@ -51,4 +51,4 @@ end_time = time.perf_counter()
 execution_time = end_time - start_time
 logging.info("---------------pipeline succesfull-------------------")
 logging.info(f"seconds         : {execution_time:.2f} seconds")
-logging.info(f"extracted Total : {len(all_data)} ")
+logging.info(f"processeed : {len(clean_data)} ")
