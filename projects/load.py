@@ -56,6 +56,11 @@ def load_data(clean_data):
     # executemany to send all data at once
     cursor.executemany(insert_query,batch_data)
     connection.commit()
+    logging.info("------Load Summary------")
+    logging.info(f"Total records received : {len(clean_data)}")
+    logging.info(f"Records inserted : {cursor.rowcount}")
+    logging.info(f"Duplicate records skipped : {len(clean_data) - cursor.rowcount}")
+
 
   # if there was a error in storing data in database
   except Exception as e:

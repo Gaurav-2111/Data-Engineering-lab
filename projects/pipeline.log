@@ -55,3 +55,39 @@
 2026-07-17 22:54:40,962 | INFO | ---------------pipeline succesfull-------------------
 2026-07-17 22:54:40,962 | INFO | seconds         : 3.70 seconds
 2026-07-17 22:54:40,962 | INFO | extracted Total : 60 
+2026-07-18 22:43:02,104 | INFO | ------------------Pipeline started------------------
+2026-07-18 22:43:03,277 | INFO | Attempt : succeeded
+2026-07-18 22:43:03,279 | INFO | Extracted 20 movies from page 1
+2026-07-18 22:43:04,291 | INFO | Attempt : succeeded
+2026-07-18 22:43:04,292 | INFO | Extracted 20 movies from page 2
+2026-07-18 22:43:05,328 | INFO | Attempt : succeeded
+2026-07-18 22:43:05,330 | INFO | Extracted 20 movies from page 3
+2026-07-18 22:43:06,171 | INFO | Attempt : succeeded
+2026-07-18 22:43:06,172 | INFO | Extracted 20 movies from page 4
+2026-07-18 22:43:07,057 | INFO | Attempt : succeeded
+2026-07-18 22:43:07,059 | INFO | Extracted 20 movies from page 5
+2026-07-18 22:43:08,119 | INFO | Attempt : succeeded
+2026-07-18 22:43:08,120 | INFO | Extracted 20 movies from page 6
+2026-07-18 22:43:09,068 | INFO | Attempt : succeeded
+2026-07-18 22:43:09,070 | INFO | Extracted 20 movies from page 7
+2026-07-18 22:43:10,050 | INFO | Attempt : succeeded
+2026-07-18 22:43:10,051 | INFO | Extracted 20 movies from page 8
+2026-07-18 22:43:11,092 | INFO | Attempt : succeeded
+2026-07-18 22:43:11,093 | INFO | Extracted 20 movies from page 9
+2026-07-18 22:43:12,079 | INFO | Attempt : succeeded
+2026-07-18 22:43:12,081 | INFO | Extracted 20 movies from page 10
+2026-07-18 22:43:12,081 | INFO | Extracted 200 movies in total
+2026-07-18 22:43:12,094 | INFO | ------Starting data transformation process------
+2026-07-18 22:43:12,095 | INFO | Total records received : 200
+2026-07-18 22:43:12,095 | INFO | Valid records          : 200
+2026-07-18 22:43:12,095 | INFO | Invalid records        : 0
+2026-07-18 22:43:12,095 | INFO | ------Data transformation completed------
+2026-07-18 22:43:12,095 | INFO | ----starting data loading process----
+2026-07-18 22:43:12,610 | INFO | loading 200 rows of data into the database
+2026-07-18 22:43:12,675 | INFO | ------Load Summary------
+2026-07-18 22:43:12,675 | INFO | Total records received : 200
+2026-07-18 22:43:12,675 | INFO | Records inserted : 127
+2026-07-18 22:43:12,675 | INFO | Duplicate records skipped : 73
+2026-07-18 22:43:12,676 | INFO | ---------------pipeline succesfull-------------------
+2026-07-18 22:43:12,676 | INFO | seconds         : 10.57 seconds
+2026-07-18 22:43:12,676 | INFO | processeed : 200 

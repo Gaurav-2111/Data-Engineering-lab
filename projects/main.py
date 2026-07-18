@@ -20,18 +20,29 @@ all_data = []
 start_time = time.perf_counter()
 
 logging.info("------------------Pipeline started------------------")
-
-for i in range(1,4):
+total_pages = None 
+for page in range(1,MAX_PAGES + 1):
   params = {
     "language": "en-US",
-    "page": i
+    "page": page
   }
+
+  # checking if the page number exceeds the total pages available in the API response
+  if total_pages is not None and page > total_pages:
+    logging.info(f"page {page} exceeds total pages {total_pages}. Stopping extraction.")
+    break
+
   movies = extract_data(endpoint,params)
+
+  if page == 1:
+    total_pages = movies['total_pages']
+
+  
   if movies is None:
     logging.error("pipeline stopped because extraction failed.")
     raise RuntimeError("pipeline stopped because data extraction failed")
 
-  logging.info(f"Extracted {len(movies['results'])} movies from page {i}")
+  logging.info(f"Extracted {len(movies['results'])} movies from page {page}")
   all_data.extend(movies['results'])
 logging.info(f"Extracted {len(all_data)} movies in total")
 
