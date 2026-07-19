@@ -44,6 +44,7 @@ for page in range(1,MAX_PAGES + 1):
 
   logging.info(f"Extracted {len(movies['results'])} movies from page {page}")
   all_data.extend(movies['results'])
+
 logging.info(f"Extracted {len(all_data)} movies in total")
 
 # calling save data with the file_name
@@ -52,14 +53,37 @@ file_name = today.strftime("%Y-%m-%d")
 save_data(all_data,file_name)
 
 #calling the transform function
-clean_data = transform_data(all_data)
+result = transform_data(all_data)
+clean_data = result["clean_data"]
+total_movies = result["total_movies"]
+valid_movies = result["valid_movies"]
+invalid_movies = result["invalid_movies"]
 
 # calling the load function to load the clean data in the database
-load_data(clean_data)
+load_result = load_data(clean_data)
+inserted_records = load_result["inserted_records"]
+duplicate_records = load_result["duplicate_records"]
 
 # ending time of pipeline
 end_time = time.perf_counter()
 execution_time = end_time - start_time
-logging.info("---------------pipeline succesfull-------------------")
+logging.info("-----------------pipeline succesfull---------------------")
+logging.info("========== Pipeline Summary ==========")
+logging.info(f"Page requested         : {MAX_PAGES}")
+logging.info(f"Movies extracted       : {len(all_data)}")
+logging.info(f"Total records received : {total_movies}")
+logging.info(f"Valid records          : {valid_movies}")
+logging.info(f"Invalid records        : {invalid_movies}")
+logging.info(f"Duplicates skipped     : {duplicate_records}")
+logging.info(f"Inserted into MySQL    : {inserted_records}")
 logging.info(f"seconds         : {execution_time:.2f} seconds")
-logging.info(f"processeed : {len(clean_data)} ")
+logging.info("======================================")
+
+
+
+
+
+
+
+
+

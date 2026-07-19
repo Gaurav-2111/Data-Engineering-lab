@@ -91,3 +91,155 @@
 2026-07-18 22:43:12,676 | INFO | ---------------pipeline succesfull-------------------
 2026-07-18 22:43:12,676 | INFO | seconds         : 10.57 seconds
 2026-07-18 22:43:12,676 | INFO | processeed : 200 
+2026-07-19 22:28:13,261 | INFO | ------------------Pipeline started------------------
+2026-07-19 22:28:14,927 | INFO | Attempt : succeeded
+2026-07-19 22:28:14,928 | INFO | Extracted 20 movies from page 1
+2026-07-19 22:28:15,832 | INFO | Attempt : succeeded
+2026-07-19 22:28:15,834 | INFO | Extracted 20 movies from page 2
+2026-07-19 22:28:16,648 | INFO | Attempt : succeeded
+2026-07-19 22:28:16,649 | INFO | Extracted 20 movies from page 3
+2026-07-19 22:28:17,424 | INFO | Attempt : succeeded
+2026-07-19 22:28:17,427 | INFO | Extracted 20 movies from page 4
+2026-07-19 22:28:18,290 | INFO | Attempt : succeeded
+2026-07-19 22:28:18,291 | INFO | Extracted 20 movies from page 5
+2026-07-19 22:28:19,082 | INFO | Attempt : succeeded
+2026-07-19 22:28:19,083 | INFO | Extracted 20 movies from page 6
+2026-07-19 22:28:19,945 | INFO | Attempt : succeeded
+2026-07-19 22:28:19,946 | INFO | Extracted 20 movies from page 7
+2026-07-19 22:28:20,851 | INFO | Attempt : succeeded
+2026-07-19 22:28:20,852 | INFO | Extracted 20 movies from page 8
+2026-07-19 22:28:21,755 | INFO | Attempt : succeeded
+2026-07-19 22:28:21,757 | INFO | Extracted 20 movies from page 9
+2026-07-19 22:28:22,532 | INFO | Attempt : succeeded
+2026-07-19 22:28:22,534 | INFO | Extracted 20 movies from page 10
+2026-07-19 22:28:22,534 | INFO | Extracted 200 movies in total
+2026-07-19 22:28:22,543 | INFO | ------Starting data transformation process------
+2026-07-19 22:28:22,543 | INFO | Total records received : 200
+2026-07-19 22:28:22,544 | INFO | Valid records          : 200
+2026-07-19 22:28:22,544 | INFO | Invalid records        : 0
+2026-07-19 22:28:22,544 | INFO | ------Data transformation completed------
+2026-07-19 22:39:08,599 | INFO | ------------------Pipeline started------------------
+2026-07-19 22:39:09,689 | INFO | Attempt : succeeded
+2026-07-19 22:39:09,691 | INFO | Extracted 20 movies from page 1
+2026-07-19 22:39:10,444 | INFO | Attempt : succeeded
+2026-07-19 22:39:10,445 | INFO | Extracted 20 movies from page 2
+2026-07-19 22:39:11,093 | INFO | Attempt : succeeded
+2026-07-19 22:39:11,106 | INFO | Extracted 20 movies from page 3
+2026-07-19 22:39:11,831 | INFO | Attempt : succeeded
+2026-07-19 22:39:11,832 | INFO | Extracted 20 movies from page 4
+2026-07-19 22:39:12,510 | INFO | Attempt : succeeded
+2026-07-19 22:39:12,511 | INFO | Extracted 20 movies from page 5
+2026-07-19 22:39:13,227 | INFO | Attempt : succeeded
+2026-07-19 22:39:13,228 | INFO | Extracted 20 movies from page 6
+2026-07-19 22:39:13,912 | INFO | Attempt : succeeded
+2026-07-19 22:39:13,913 | INFO | Extracted 20 movies from page 7
+2026-07-19 22:39:14,714 | INFO | Attempt : succeeded
+2026-07-19 22:39:14,715 | INFO | Extracted 20 movies from page 8
+2026-07-19 22:39:15,408 | INFO | Attempt : succeeded
+2026-07-19 22:39:15,410 | INFO | Extracted 20 movies from page 9
+2026-07-19 22:39:16,271 | INFO | Attempt : succeeded
+2026-07-19 22:39:16,272 | INFO | Extracted 20 movies from page 10
+2026-07-19 22:39:16,272 | INFO | Extracted 200 movies in total
+2026-07-19 22:39:16,280 | INFO | ------Starting data transformation process------
+2026-07-19 22:39:16,280 | INFO | Total records received : 200
+2026-07-19 22:39:16,280 | INFO | Valid records          : 200
+2026-07-19 22:39:16,280 | INFO | Invalid records        : 0
+2026-07-19 22:39:16,280 | INFO | ------Data transformation completed------
+2026-07-19 22:43:23,700 | INFO | ------------------Pipeline started------------------
+2026-07-19 22:43:24,323 | INFO | Attempt : succeeded
+2026-07-19 22:43:24,324 | INFO | Extracted 20 movies from page 1
+2026-07-19 22:43:25,052 | INFO | Attempt : succeeded
+2026-07-19 22:43:25,053 | INFO | Extracted 20 movies from page 2
+2026-07-19 22:43:25,673 | INFO | Attempt : succeeded
+2026-07-19 22:43:25,674 | INFO | Extracted 20 movies from page 3
+2026-07-19 22:43:26,290 | INFO | Attempt : succeeded
+2026-07-19 22:43:26,291 | INFO | Extracted 20 movies from page 4
+2026-07-19 22:43:26,910 | INFO | Attempt : succeeded
+2026-07-19 22:43:26,911 | INFO | Extracted 20 movies from page 5
+2026-07-19 22:43:27,543 | INFO | Attempt : succeeded
+2026-07-19 22:43:27,543 | INFO | Extracted 20 movies from page 6
+2026-07-19 22:43:28,266 | INFO | Attempt : succeeded
+2026-07-19 22:43:28,266 | INFO | Extracted 20 movies from page 7
+2026-07-19 22:43:28,964 | INFO | Attempt : succeeded
+2026-07-19 22:43:28,965 | INFO | Extracted 20 movies from page 8
+2026-07-19 22:43:29,706 | INFO | Attempt : succeeded
+2026-07-19 22:43:29,707 | INFO | Extracted 20 movies from page 9
+2026-07-19 22:43:30,362 | INFO | Attempt : succeeded
+2026-07-19 22:43:30,364 | INFO | Extracted 20 movies from page 10
+2026-07-19 22:43:30,364 | INFO | Extracted 200 movies in total
+2026-07-19 22:43:30,373 | INFO | ------Starting data transformation process------
+2026-07-19 22:43:30,373 | INFO | Total records received : 200
+2026-07-19 22:43:30,373 | INFO | Valid records          : 200
+2026-07-19 22:43:30,373 | INFO | Invalid records        : 0
+2026-07-19 22:43:30,373 | INFO | ------Data transformation completed------
+2026-07-19 22:44:07,127 | INFO | ------------------Pipeline started------------------
+2026-07-19 22:44:07,828 | INFO | Attempt : succeeded
+2026-07-19 22:44:07,829 | INFO | Extracted 20 movies from page 1
+2026-07-19 22:44:08,424 | INFO | Attempt : succeeded
+2026-07-19 22:44:08,425 | INFO | Extracted 20 movies from page 2
+2026-07-19 22:44:09,146 | INFO | Attempt : succeeded
+2026-07-19 22:44:09,147 | INFO | Extracted 20 movies from page 3
+2026-07-19 22:44:09,809 | INFO | Attempt : succeeded
+2026-07-19 22:44:09,810 | INFO | Extracted 20 movies from page 4
+2026-07-19 22:44:10,618 | INFO | Attempt : succeeded
+2026-07-19 22:44:10,619 | INFO | Extracted 20 movies from page 5
+2026-07-19 22:44:11,297 | INFO | Attempt : succeeded
+2026-07-19 22:44:11,298 | INFO | Extracted 20 movies from page 6
+2026-07-19 22:44:11,895 | INFO | Attempt : succeeded
+2026-07-19 22:44:11,895 | INFO | Extracted 20 movies from page 7
+2026-07-19 22:44:12,501 | INFO | Attempt : succeeded
+2026-07-19 22:44:12,502 | INFO | Extracted 20 movies from page 8
+2026-07-19 22:44:13,126 | INFO | Attempt : succeeded
+2026-07-19 22:44:13,127 | INFO | Extracted 20 movies from page 9
+2026-07-19 22:44:13,781 | INFO | Attempt : succeeded
+2026-07-19 22:44:13,782 | INFO | Extracted 20 movies from page 10
+2026-07-19 22:44:13,782 | INFO | Extracted 200 movies in total
+2026-07-19 22:44:13,790 | INFO | ------Starting data transformation process------
+2026-07-19 22:44:13,791 | INFO | Total records received : 200
+2026-07-19 22:44:13,791 | INFO | Valid records          : 200
+2026-07-19 22:44:13,791 | INFO | Invalid records        : 0
+2026-07-19 22:44:13,791 | INFO | ------Data transformation completed------
+2026-07-19 22:49:38,713 | INFO | ------------------Pipeline started------------------
+2026-07-19 22:49:39,452 | INFO | Attempt : succeeded
+2026-07-19 22:49:39,453 | INFO | Extracted 20 movies from page 1
+2026-07-19 22:49:40,566 | INFO | Attempt : succeeded
+2026-07-19 22:49:40,567 | INFO | Extracted 20 movies from page 2
+2026-07-19 22:49:41,419 | INFO | Attempt : succeeded
+2026-07-19 22:49:41,420 | INFO | Extracted 20 movies from page 3
+2026-07-19 22:49:42,157 | INFO | Attempt : succeeded
+2026-07-19 22:49:42,158 | INFO | Extracted 20 movies from page 4
+2026-07-19 22:49:42,898 | INFO | Attempt : succeeded
+2026-07-19 22:49:42,898 | INFO | Extracted 20 movies from page 5
+2026-07-19 22:49:43,538 | INFO | Attempt : succeeded
+2026-07-19 22:49:43,539 | INFO | Extracted 20 movies from page 6
+2026-07-19 22:49:44,304 | INFO | Attempt : succeeded
+2026-07-19 22:49:44,305 | INFO | Extracted 20 movies from page 7
+2026-07-19 22:49:45,264 | INFO | Attempt : succeeded
+2026-07-19 22:49:45,265 | INFO | Extracted 20 movies from page 8
+2026-07-19 22:49:45,905 | INFO | Attempt : succeeded
+2026-07-19 22:49:45,906 | INFO | Extracted 20 movies from page 9
+2026-07-19 22:49:46,542 | INFO | Attempt : succeeded
+2026-07-19 22:49:46,543 | INFO | Extracted 20 movies from page 10
+2026-07-19 22:49:46,543 | INFO | Extracted 200 movies in total
+2026-07-19 22:49:46,552 | INFO | ------Starting data transformation process------
+2026-07-19 22:49:46,552 | INFO | Total records received : 200
+2026-07-19 22:49:46,552 | INFO | Valid records          : 200
+2026-07-19 22:49:46,552 | INFO | Invalid records        : 0
+2026-07-19 22:49:46,552 | INFO | ------Data transformation completed------
+2026-07-19 22:49:46,552 | INFO | ----starting data loading process----
+2026-07-19 22:49:46,866 | INFO | loading 200 rows of data into the database
+2026-07-19 22:49:46,897 | INFO | ------Load Summary------
+2026-07-19 22:49:46,897 | INFO | Total records received : 200
+2026-07-19 22:49:46,897 | INFO | Records inserted : 39
+2026-07-19 22:49:46,897 | INFO | Duplicate records skipped : 161
+2026-07-19 22:49:46,897 | INFO | -----------------pipeline succesfull---------------------
+2026-07-19 22:49:46,897 | INFO | ========== Pipeline Summary ==========
+2026-07-19 22:49:46,897 | INFO | Page requested        : 10
+2026-07-19 22:49:46,897 | INFO | Movies extracted       : 200
+2026-07-19 22:49:46,897 | INFO | Total records received : 200
+2026-07-19 22:49:46,897 | INFO | Valid records          : 200
+2026-07-19 22:49:46,897 | INFO | Invalid records        : 0
+2026-07-19 22:49:46,897 | INFO | Duplicates skipped         : 161
+2026-07-19 22:49:46,897 | INFO | Inserted into MySQL        : 39
+2026-07-19 22:49:46,897 | INFO | seconds         : 8.18 seconds
+2026-07-19 22:49:46,897 | INFO | ======================================

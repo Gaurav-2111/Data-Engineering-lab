@@ -52,6 +52,11 @@ def transform_data(all_data):
   logging.info(f"Valid records          : {valid_movies}")
   logging.info(f"Invalid records        : {invalid_movies}")
   logging.info("------Data transformation completed------")
-  return clean_data
+  transform_info = {"clean_data": clean_data,
+          "total_movies": total_movies,
+          "valid_movies": valid_movies,
+          "invalid_movies": invalid_movies
+          }
+  return transform_info
 
 

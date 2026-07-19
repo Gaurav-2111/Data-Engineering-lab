@@ -72,3 +72,8 @@ def load_data(clean_data):
     cursor.close()
     connection.close()
 
+  return {
+    "inserted_records": cursor.rowcount,
+    "duplicate_records": len(clean_data) - cursor.rowcount
+  }
+
