@@ -61,7 +61,11 @@ def load_data(clean_data):
     logging.info(f"Records inserted : {cursor.rowcount}")
     logging.info(f"Duplicate records skipped : {len(clean_data) - cursor.rowcount}")
 
-
+    load_info = {
+    "inserted_records": cursor.rowcount,
+    "duplicate_records": len(clean_data) - cursor.rowcount
+  } 
+    
   # if there was a error in storing data in database
   except Exception as e:
     logging.error(f"database transaction failed so rolling back changes , error : {e}")
@@ -72,8 +76,4 @@ def load_data(clean_data):
     cursor.close()
     connection.close()
 
-  return {
-    "inserted_records": cursor.rowcount,
-    "duplicate_records": len(clean_data) - cursor.rowcount
-  }
-
+  return load_info

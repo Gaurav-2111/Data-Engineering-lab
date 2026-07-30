@@ -13,7 +13,7 @@ def extract_data(endpoint , params):
   # If any issue retry logic
   for attempts in range(1,MAX_ATTEMPTS + 1):
     try:
-      response = requests.get(url,params=params,headers=headers)
+      response = requests.get(url,params=params,headers=headers,timeout=10)
 
       # Checking the status if 200 move forward
       if response.status_code == 200:

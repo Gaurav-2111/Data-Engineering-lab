@@ -33,14 +33,14 @@ for page in range(1,MAX_PAGES + 1):
     break
 
   movies = extract_data(endpoint,params)
-
-  if page == 1:
-    total_pages = movies['total_pages']
-
   
   if movies is None:
     logging.error("pipeline stopped because extraction failed.")
     raise RuntimeError("pipeline stopped because data extraction failed")
+
+  if page == 1:
+    total_pages = movies['total_pages']
+
 
   logging.info(f"Extracted {len(movies['results'])} movies from page {page}")
   all_data.extend(movies['results'])
